@@ -75,6 +75,7 @@ plugins=(
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+	zsh-vi-mode
 	you-should-use
 	zsh-bat
 	wd

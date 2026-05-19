@@ -75,10 +75,10 @@ plugins=(
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
-	zsh-vi-mode
-	you-should-use
+	# you-should-use
 	zsh-bat
 	wd
+	copypath
 	)
 
 export PATH=~/go/bin/:$PATH
@@ -87,6 +87,8 @@ source $ZSH/oh-my-zsh.sh
 
 # fzf
 source <(fzf --zsh)
+bindkey '\eg' fzf-cd-widget
+# bindkey '\ef' fzf-find-edit
 
 # User configuration
 
@@ -118,3 +120,6 @@ source <(fzf --zsh)
 
 # customs
 export NVIM_SRC=~/.config/nvim/
+export EDITOR=nvim
+alias lg=lazygit
+
